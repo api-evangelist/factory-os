@@ -1,0 +1,59 @@
+generated: '2026-08-12'
+method: probed
+source: live HTTP probes of harbinger.homes and factoryos.com
+note: >-
+  Every /.well-known/ path probed returns a real 404 on harbinger.homes (the live
+  Factory OS / Harbinger Homes site) and a blanket 301 to https://harbinger.homes/
+  on the legacy factoryos.com domain. Nothing was served, so NO WellKnown or
+  SecurityTxt pointer is wired into apis.yml — this file records a verified
+  absence, not a presence.
+hosts:
+- host: harbinger.homes
+  note: Live company site (Framer-hosted marketing brochure, two URLs in sitemap.xml).
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: factoryos.com
+  note: >-
+    Legacy Factory OS domain. Every path, including all /.well-known/ paths, returns
+    301 to https://harbinger.homes/ — a blanket domain redirect, not a served document.
+  paths:
+  - path: /.well-known/security.txt
+    status: 301
+    redirect: https://harbinger.homes/
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    redirect: https://harbinger.homes/
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    redirect: https://harbinger.homes/
+    file: null
+summary:
+  paths_probed: 11
+  documents_found: 0
+  security_txt: false
+  agent_card: false

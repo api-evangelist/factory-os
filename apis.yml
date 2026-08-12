@@ -1,7 +1,24 @@
 aid: factory-os
 name: Factory OS
-description: 'Factory OS is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Factory OS (styled Factory_OS) is an off-site construction company founded
+  in 2017 by Rick Holliday and Larry Pace that industrialized multifamily and affordable
+  housing production on an assembly line inside a 275,000-square-foot facility in Building
+  680 on Mare Island in Vallejo, California. Union carpenters build wood-frame housing
+  modules across roughly two dozen stations in a 33-step process, and the finished modules
+  are trucked to the project site and assembled — an approach the company says cuts
+  production time by about half and production cost by a quarter against conventional
+  site-built construction. It raised roughly $132 million across three rounds, including
+  $60 million from JPMorgan Chase and Saint-Gobain in 2021, and delivered more than
+  4,000 homes across California and Hawaii, about 90 percent of them affordable housing.
+  In May 2024 the company was recapitalized and renamed Harbinger Homes (legal entity
+  Harbinger Production Inc.), with Tom Smith as CEO and Kevin Brown as president; factoryos.com
+  now 301-redirects every path to harbinger.homes. Harbinger filed a WARN notice on
+  12 February 2026 covering all 280 employees, citing a lack of new business and loss
+  of capital funding, with layoffs beginning 13 April 2026. Factory OS is a manufacturer
+  of physical housing modules, not a software company: it operates no developer program,
+  API, SDK, webhook surface or machine-readable specification of any kind, and its GitHub
+  organization has no public repositories.'
+image: https://framerusercontent.com/images/dGrxSMGKQjOw59MximONvOdWOU.jpg
 url: https://raw.githubusercontent.com/api-evangelist/factory-os/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +29,14 @@ created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Construction
+- Modular Construction
+- Offsite Construction
+- Manufacturing
+- Affordable Housing
+- Multifamily Housing
+- Real Estate
+- Construction Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +44,60 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/factory-os-domain-security.yml
+- type: LLMsTxt
+  url: llms/factory-os-llms.txt
 - type: Website
+  url: https://harbinger.homes/
+- type: FormerWebsite
+  name: factoryos.com (301 redirects to harbinger.homes)
+  url: https://factoryos.com/
+- type: Contact
+  url: https://harbinger.homes/contact
+- type: Careers
+  url: https://recruiting.paylocity.com/recruiting/jobs/All/f6d0f7bd-df42-43ee-8899-f5e5bc26297e/Harbinger-Production-Inc
+- type: LinkedIn
+  url: https://www.linkedin.com/company/harbinger-production/
+- type: LinkedIn
+  name: Factory OS (legacy company page)
+  url: https://www.linkedin.com/company/factoryos
+- type: GitHubOrganization
+  url: https://github.com/factoryos
+- type: SecondaryMarket
+  name: Forge Global private-market listing
   url: https://forgeglobal.com/factory-os_stock/
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Factory OS manufactures physical wood-frame housing modules on an assembly line in
+    Vallejo, California — after its May 2024 rename to Harbinger Homes, factoryos.com
+    301-redirects every path (including /api, /docs, /developers and all /.well-known/*)
+    to harbinger.homes, which is a two-URL Framer marketing brochure whose own sitemap.xml
+    lists only / and /contact, and where /openapi.json, /graphql, /llms.txt and every
+    /.well-known/ path return a real 404; no api./docs./developer. subdomain resolves on
+    either domain, and the company's own GitHub organization has no public repositories.
+  evidence:
+    - url: https://factoryos.com/openapi.json
+      status: 301
+    - url: https://harbinger.homes/openapi.json
+      status: 404
+    - url: https://harbinger.homes/graphql
+      status: 404
+    - url: https://harbinger.homes/llms.txt
+      status: 404
+    - url: https://harbinger.homes/.well-known/agent-card.json
+      status: 404
+    - url: https://harbinger.homes/.well-known/security.txt
+      status: 404
+    - url: https://harbinger.homes/sitemap.xml
+      status: 200
+    - url: https://harbinger.homes/
+      status: 200
+  checked: '2026-08-12'
