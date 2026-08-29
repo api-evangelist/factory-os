@@ -18,6 +18,17 @@ description: 'Factory OS (styled Factory_OS) is an off-site construction company
   of physical housing modules, not a software company: it operates no developer program,
   API, SDK, webhook surface or machine-readable specification of any kind, and its GitHub
   organization has no public repositories.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://framerusercontent.com/images/dGrxSMGKQjOw59MximONvOdWOU.jpg
 url: https://raw.githubusercontent.com/api-evangelist/factory-os/refs/heads/main/apis.yml
 x-type: company
