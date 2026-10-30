@@ -64,5 +64,80 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Factory OS is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/factory-os_stock/
+Factory OS (styled Factory_OS) is an off-site construction company founded in 2017 by Rick Holliday and Larry Pace that industrialized multifamily and affordable housing production on an assembly line inside a 275,000-square-foot facility in Building 680 on Mare Island in Vallejo, California. Union carpenters build wood-frame housing modules across roughly two dozen stations in a 33-step process, and the finished modules are trucked to the project site and assembled — an approach the company says cuts production time by about half and production cost by a quarter against conventional site-built construction. It raised roughly $132 million across three rounds, including $60 million from JPMorgan Chase and Saint-Gobain in 2021, and delivered more than 4,000 homes across California and Hawaii, about 90 percent of them affordable housing. In May 2024 the company was recapitalized and renamed Harbinger Homes (legal entity Harbinger Production Inc.), with Tom Smith as CEO and Kevin Brown as president; factoryos.com now 301-redirects every path to harbinger.homes. Harbinger filed a WARN notice on 12 February 2026 covering all 280 employees, citing a lack of new business and loss of capital funding, with layoffs beginning 13 April 2026. Factory OS is a manufacturer of physical housing modules, not a software company: it operates no developer program, API, SDK, webhook surface or machine-readable specification of any kind, and its GitHub organization has no public repositories.
+
+**Areas:** Company · Construction · Modular Construction · Offsite Construction · Manufacturing · Affordable Housing · Multifamily Housing · Real Estate · Construction Technology
+
+## Factory OS on APIs.io
+
+Everything profiled for Factory OS is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/factory-os/](https://apis.io/providers/factory-os/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Factory Os Domain Security](https://apis.io/security/factory-os/factory-os-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://harbinger.homes/)
+- [GitHub](https://github.com/factoryos)
+
+## API Evangelist rating
+
+**Kin Score 3.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/factory-os/](https://apis.io/providers/factory-os/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Factory OS: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/factory-os/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
